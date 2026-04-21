@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/CalvinRBF-Portfolio">
       <Routes>
         <Route index element={<Home />}/>
         <Route path="*" index element={<NotFound />}/>
