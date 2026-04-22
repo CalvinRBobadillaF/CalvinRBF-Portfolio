@@ -1,72 +1,8 @@
 import { useState } from "react"
 import { cn } from "../lib/util"
 
-const skills = [
-    //Frontend
-    {
-        name: "HTML", category: "Frontend", logo: `${import.meta.env.BASE_URL}assets/html5-logo_svgstack_com_28511775598174.svg`
-    },
-    {
-        name: "CSS", category: "Frontend", logo: `${import.meta.env.BASE_URL}assets/css-logo_svgstack_com_28131775598275.svg`
-    },
-    {
-        name: "Javascript", category: "Frontend", logo: `${import.meta.env.BASE_URL}assets/javascript-logo_svgstack_com_28641775598299.svg`
-    },
-    {
-        name: "Typescript", category: "Frontend", logo: `${import.meta.env.BASE_URL}assets/typescript-logo_svgstack_com_31481775598309.svg`
-    },
-    {
-        name: "React", category: "Frontend", logo: `${import.meta.env.BASE_URL}assets/react.svg`
-    },
-    {
-        name: "Tailwind CSS", category: "Frontend", logo: `${import.meta.env.BASE_URL}assets/tailwind-svgrepo-com.svg`
-    },
-    {
-        name: "React Native", category: "Mobile", logo: `${import.meta.env.BASE_URL}assets/reactts-svgrepo-com.svg`
-    },
+import { skills } from "../data/skills"
 
-    //Backend
-    {
-        name: "Python", category: "Backend", logo: `${import.meta.env.BASE_URL}assets/python-logo_svgstack_com_29121775598387.svg`
-    },
-    {
-        name: "FastAPI", category: "Backend", logo: `${import.meta.env.BASE_URL}assets/fastapi-svgrepo-com.svg`
-    },
-
-    //Tools
-    {
-        name: "Git", category: "Tools", logo: `${import.meta.env.BASE_URL}assets/git-logo-svg_svgstack_com_28381775598373.svg`
-    },
-    {
-        name: "GitHub", category: "Tools", logo: `${import.meta.env.BASE_URL}assets/github-svgrepo-com.svg`
-    },
-    {
-        name: "VS Code", category: "Tools", logo: `${import.meta.env.BASE_URL}assets/vs-code-svgrepo-com.svg`
-    },
-    {
-        name: "Terminal", category: "Tools", logo: `${import.meta.env.BASE_URL}assets/terminal-svgrepo-com.svg`
-    },
-
-    //Others
-    {
-        name: "English C1", category: "Others", logo: `${import.meta.env.BASE_URL}assets/language-svgrepo-com.svg`
-    },
-    {
-        name: "Spanish Native", category: "Others", logo: `${import.meta.env.BASE_URL}assets/language-svgrepo-com (1).svg`
-    },
-    {
-        name: "Microsoft Office", category: "Others", logo: `${import.meta.env.BASE_URL}assets/icons8-microsoft-office-2019.svg`
-    },
-    {
-        name: "Interpretation Skills", category: "Others", logo: `${import.meta.env.BASE_URL}assets/language-alt-svgrepo-com.svg`
-    },
-    {
-        name: "IA Skills", category: "Others", logo: `${import.meta.env.BASE_URL}assets/openai-svgrepo-com (1).svg`
-    },
-    {
-        name: "Help Desk Tier 1", category: "Others", logo: `${import.meta.env.BASE_URL}assets/windows-applications-svgrepo-com.svg`
-    },
-]
 
 const categories = ["All", "Frontend", "Backend", "Mobile", "Tools", "Others"]
 

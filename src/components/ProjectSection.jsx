@@ -1,52 +1,6 @@
 import { AlarmCheck, ArrowBigRightIcon } from "lucide-react";
+import { projects } from "../data/projects";
 
-const projects = [
-    {
-        id: 1,
-        title: 'IApp',
-        description: 'A super IA-Hub mixing ChatGPT, Gemini, and Claude all in one place!',
-        image: `${import.meta.env.BASE_URL}projects/projectIapp.jpeg`,
-        tags: ["React", "Javascript", "CSS", "HTML"],
-        demoUrl: "https://calvinrbobadillaf.github.io/IApp/",
-        githubUrl: 'https://github.com/CalvinRBobadillaF/IApp'
-    },
-    {
-        id: 2,
-        title: 'Weather-App',
-        description: 'Your weather in an app.',
-        image: `${import.meta.env.BASE_URL}projects/weatherapp.jpeg`,
-        tags: ["Javascript", "CSS", "HTML"],
-        demoUrl: "https://calvinrbobadillaf.github.io/Weather-App/",
-        githubUrl: 'https://github.com/CalvinRBobadillaF/Weather-App'
-    },
-    {
-        id: 3,
-        title: 'Multimedia Records',
-        description: 'All the internet multimedia in one place.',
-        image: `${import.meta.env.BASE_URL}projects/multimediarecords.jpeg`,
-        tags: ["Javascript", "CSS", "HTML"],
-        demoUrl: "https://calvinrbobadillaf.github.io/MultimediaRecords/",
-        githubUrl: 'https://github.com/CalvinRBobadillaF/MultimediaRecords'
-    },
-    {
-        id: 4,
-        title: 'Todo-App',
-        description: 'Simple Todos solution.',
-        image: `${import.meta.env.BASE_URL}projects/todoapp2.jpeg`,
-        tags: ["React", "Javascript", "CSS", "HTML"],
-        demoUrl: "https://calvinrbobadillaf.github.io/Todo-App/",
-        githubUrl: 'https://github.com/CalvinRBobadillaF/Todo-App'
-    },
-    {
-        id: 5,
-        title: 'InterpreterAI',
-        description: 'An app to translate in real time',
-        image: `${import.meta.env.BASE_URL}projects/InterpreterAI.jpeg`,
-        tags: ["React", "Javascript", "Python", "FastApi"],
-        demoUrl: "https://calvinrbobadillaf.github.io/InterpreterAI/",
-        githubUrl: 'https://github.com/CalvinRBobadillaF/InterpreterAI'
-    },
-];
 
 export const ProjectSection = () => {
     return (
