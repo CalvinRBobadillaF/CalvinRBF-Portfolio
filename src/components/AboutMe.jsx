@@ -1,4 +1,5 @@
 import { Briefcase, Code, User } from "lucide-react"
+import cvFile from '../assets/Calvin_Bobadilla_CV.pdf'
 
 export const AboutSection = () => {
     return (
@@ -33,13 +34,14 @@ export const AboutSection = () => {
                             </a>
 
                             {/* ✅ Download CV button */}
-                            <a
-                                href={`${import.meta.env.BASE_URL}Calvin_Bobadilla_CV.pdf`}
-                                download
+                           <a
+                                href={cvFile} // 2. Usas la variable importada aquí
+                                download="Calvin_Bobadilla_CV.pdf" // Opcional: Fuerza el nombre con el que se descargará el archivo
                                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
                             >
                                 Download CV
                             </a>
+                            
                         </div>
                     </div>
 
