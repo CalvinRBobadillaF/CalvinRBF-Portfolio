@@ -69,7 +69,14 @@ export const ContactSection = () => {
                     <div className="bg-card p-8 rounded-lg shadow-sm border border-border/50">
                         <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
                         
-                        <form className="space-y-6">
+                        <form className="space-y-6" onSubmit={(e) => {
+    e.preventDefault()
+    const name = e.target.name.value
+    const email = e.target.email.value
+    const message = e.target.message.value
+    const mailtoLink = `mailto:calvinbobadillaf@gmail.com?subject=Portfolio Contact from ${name}&body=Name: ${name}%0AEmail: ${email}%0A%0A${message}`
+    window.location.href = mailtoLink
+}}>
                             {/* Input: Name */}
                             <div>
                                 <label htmlFor="name" className="block text-sm font-medium mb-2">Your name</label>
@@ -111,17 +118,7 @@ export const ContactSection = () => {
                             {/* Botón de Enviar */}
                             <button 
                                 type="submit" 
-                                onSubmit={(e) => {
-    e.preventDefault()
-
-    const name = e.target.name.value
-    const email = e.target.email.value
-    const message = e.target.message.value
-
-    const mailtoLink = `mailto:calvinbobadillaf@gmail.com?subject=Portfolio Contact from ${name}&body=Name: ${name}%0AEmail: ${email}%0A%0A${message}`
-
-    window.location.href = mailtoLink
-  }}
+                                
                                 className="w-full bg-primary text-primary-foreground py-3 px-4 rounded-md font-medium hover:bg-primary/90 transition-colors "
                             >
                                 Send Message
